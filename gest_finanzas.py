@@ -177,7 +177,7 @@ class Ingresos(customtkinter.CTk):
 
 
         if ingresos_remove > actual_monto:
-            return messagebox.showinfo("Error!", "Mamawebo!, No tenemos tanto dinero para restar xd")
+            return messagebox.showinfo("Error!", "No hay dinero!, No tenemos tanto dinero para restar")
 
         new_values = { "$set": { "monto": int(actual_monto)-ingresos_remove } }
 
